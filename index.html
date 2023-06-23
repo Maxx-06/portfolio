@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ujjwal Bhardwaj</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+      integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Max</div>
+      <nav>
+        <ul class="nav__links">
+          <li class="home"><a href="#">Home</a></li>
+          <li class="about"><a href="#">About</a></li>
+          <li class="skills"><a href="#">Skills</a></li>
+          <li class="services"><a href="#">Services</a></li>
+          <li class="projects"><a href="#">Projects</a></li>
+          <li class="contact"><a href="#">Contact</a></li>
+        </ul>
+        <i class="bi bi-grid-fill menu__icon"></i>
+
+        <ul class="nav__icon">
+          <li>
+            <a href="#"
+              ><i class="bi bi-house-fill"></i>
+              <div>Home</div></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="bi bi-person-fill"></i>
+              <div>About</div></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-journal-bookmark-fill"></i>
+              <div>Skills</div></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="bi bi-briefcase-fill"></i>
+              <div>Services</div></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="bi bi-image-fill"></i>
+              <div>Projects</div></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="bi bi-person-lines-fill"></i>
+              <div>Contact</div></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="home__section">
+      <div class="intro"></div>
+      <div class="my__pic"><img src="/" alt="" srcset="" /></div>
+    </section>
+    <script src="/script.js"></script>
+    <script>
+      gsap.fromTo(".logo", { y: -70 }, { y: 0, duration: 0.8 });
+      gsap.fromTo(".home", { y: -80 }, { y: 0, duration: 0.9 });
+      gsap.fromTo(".about", { y: -90 }, { y: 0, duration: 1 });
+      gsap.fromTo(".skills", { y: -100 }, { y: 0, duration: 1.1 });
+      gsap.fromTo(".services", { y: -110 }, { y: 0, duration: 1.2 });
+      gsap.fromTo(".projects", { y: -120 }, { y: 0, duration: 1.3 });
+      gsap.fromTo(".contact", { y: -130 }, { y: 0, duration: 1.4 });
+    </script>
+  </body>
+</html>

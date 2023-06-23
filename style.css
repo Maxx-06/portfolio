@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Hind:wght@300;400;500;600&family=Jura:wght@300;400;500;600;700&family=Mukta:wght@800&family=Poppins:wght@200;300;400;500;600&family=Teko:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+body {
+  height: 200vh;
+}
+
+/* Navbar Start  for large screens*/
+
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 16px 10%;
+  height: 4.5rem;
+  position: fixed;
+  width: 100vw;
+  transition: box-shadow 0.2s ease-in;
+  overflow: hidden;
+}
+
+.logo {
+  cursor: pointer;
+  user-select: none;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0 12px;
+}
+
+li a {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav__links li a {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__links li a:hover {
+  color: rgb(26, 25, 25);
+}
+
+.navbar__scroll {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Navbar End for Bigger Screen */
+/*---------------------------------------------*/
+
+/* Home Section Start for large screen  */
+.home__section {
+  width: 100vw;
+  border: 2px solid red;
+  z-index: 2;
+  display: none;
+  padding-top: 5rem;
+}
+/* Home Section End */
+/* -------------------------------------------*/
+
+/* Navbar menu icon hiding for large screen */
+
+@media (min-width: 769px) {
+  .nav__icon {
+    display: none;
+  }
+  .menu__icon {
+    display: none;
+  }
+}
+
+/*-------------------------------------------*/
+
+/* BreakPoint for medium device  to very-small devices*/
+
+@media (max-width: 768px) {
+  /* Navbar Section Start */
+
+  .nav__links {
+    display: none;
+  }
+
+  .menu__icon {
+    font-size: 20px;
+  }
+
+  .nav__icon {
+    position: fixed;
+    bottom: 0.1%;
+    left: 0%;
+    width: 100vw;
+    transform: translateY(300px);
+    height: 15rem;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+    padding: 0 10px;
+    transition: transform 0.2s ease-in;
+  }
+
+  .nav__icon li {
+    text-align: center;
+  }
+
+  .nav__icon li a i {
+    text-align: center;
+    font-size: 20px;
+  }
+  .nav__icon li a div {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .show__icon {
+    transform: translateY(0px);
+  }
+
+  /* Navbar Section End  */
+}
